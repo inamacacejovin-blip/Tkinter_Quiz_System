@@ -1,22 +1,8 @@
 # NetBasics Quiz
 
-**Name:** Leela C. Camino
-**Section:** SE-4A
+**Name:** Ace Jovin I. Inamac
+**Section:** SE - 3A
 **Topic:** Networking Fundamentals
-
-A desktop quiz game made with Python and Tkinter. It asks 10 multiple-choice questions about basic networking, gives the player 15 seconds for each one, and keeps the best score in a text file.
-
-## How to Run
-
-1. Install Python 3 (from python.org, keep Tcl/Tk selected). On Linux, run `sudo apt install python3-tk`.
-2. Download or clone this repository.
-3. Open a terminal in the project folder and run:
-
-```
-python quiz.py
-```
-
-The file `high_score.txt` is created automatically in the same folder after the first finished quiz.
 
 ## Features Completed
 
@@ -35,7 +21,7 @@ The file `high_score.txt` is created automatically in the same folder after the 
 
 ## How the Questions Are Stored and Shuffled
 
-Each question is a Python dictionary with three keys: `"question"` (the text), `"choices"` (a list of four strings like `"C. Router"`), and `"answer"` (the letter of the right choice, like `"C"`). All ten dictionaries are placed inside one list called `QUESTIONS`.
+Each question is a Python dictionary with three keys: `"question"` , `"choices"`, and `"answer"` . All ten dictionaries are placed inside one list called `QUESTIONS`.
 
 When the player starts or restarts, `start_quiz()` calls `random.sample(QUESTIONS, len(QUESTIONS))`. This makes a new list with the same questions in a random order, so the original `QUESTIONS` list is never changed. The program then uses that shuffled list, called `quiz_questions`. The question number shown on screen comes from `current_question + 1`, so the numbers stay correct even when the order changes.
 
@@ -87,11 +73,7 @@ The high score is stored in `high_score.txt`, next to the program file (the path
 
 ## Screenshots
 
-![Start screen](screenshots/start.png)
-![Question screen](screenshots/question.png)
-![Answer feedback](screenshots/feedback.png)
-![Results screen](screenshots/results.png)
-![High score after reopening](screenshots/high_score.png)
+uploaded in the repository
 
 ## Challenges I Faced
 
